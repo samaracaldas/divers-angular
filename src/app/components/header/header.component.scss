@@ -9,21 +9,27 @@
     left: 0;
     width: 100%;
     height: calc(100% + 15rem);
-    background-image: radial-gradient(
-        rgba(255, 255, 255, 0),
-        var(--primary-color)
-      ),
-      url("../../../assets/images/hero.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    z-index: -1;
+    background: radial-gradient(rgba(255, 255, 255, 0), var(--primary-color));
+    z-index: 0;
+    pointer-events: none;
   }
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 15rem);
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
 }
 
 .header__container {
   position: relative;
   isolation: isolate;
+  z-index: 1;
   height: calc(100% - 75px);
   display: flex;
   align-items: center;
