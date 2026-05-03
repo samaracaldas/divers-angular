@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\samar\\\\OneDrive\\\\Área de Trabalho\\\\divers-angular\\\\src\" -Recurse -Include *.ts, *.html, *.scss)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)"
+    ]
+  }
+}

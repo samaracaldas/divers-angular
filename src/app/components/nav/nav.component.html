@@ -1,0 +1,22 @@
+<nav>
+  <div class="nav__bar">
+    <div class="logo nav__logo">
+      <a href="#">THE DIVE</a>
+    </div>
+    <ul class="nav__links" [class.open]="isMenuOpen"
+        (click)="closeMenu()" (keydown.enter)="closeMenu()">
+      <li><a href="#about">Sobre Nós</a></li>
+      <li><a href="#equipment">Equipamentos</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <button class="nav__menu__btn" type="button" [attr.aria-expanded]="isMenuOpen"
+            aria-label="Abrir menu" (click)="toggleMenu()">
+      <i [class]="isMenuOpen ? 'ri-close-line' : 'ri-menu-line'"></i>
+    </button>
+    <div class="nav__action__btn">
+      <button class="btn">
+        <span><i class="ri-user-line"></i></span> Login
+      </button>
+    </div>
+  </div>
+</nav>
